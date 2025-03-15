@@ -17,12 +17,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.city.ui.theme.CityViewModel
 import com.example.city.ui.theme.Screen
 import com.example.city.ui.theme.ScreenCityApp
+import com.example.city.ui.theme.ScreenCityCategory
 import com.example.city.ui.theme.ScreenCityContentList
 import com.example.city.ui.theme.ScreenRecommendationCity
 
@@ -47,8 +50,19 @@ fun CityApp(windowSizeClass: WindowSizeClass) {
     AdaptiveUI(windowSizeClass)
 
     NavHost(navController = navController, startDestination = Screen.CityApp.route) {
-        composable(Screen.CityApp.route) { ScreenCityApp(navController) }
-        composable(Screen.CityContentList.route) { ScreenCityContentList(navController, viewModel, windowSizeClass) }
+        composable(Screen.CityApp.route) { ScreenCityApp(navController, windowSizeClass) }
+        composable(Screen.CityCategory.route) { ScreenCityCategory(navController) }
+        composable(
+            route = Screen.CityContentList.route,
+            arguments = listOf(
+                navArgument("category") { type = NavType.StringType },
+                navArgument("id") { type = NavType.IntType }
+            )
+        ) { backStackEntry ->
+            val category = backStackEntry.arguments?.getString("category") ?: ""
+            val id = backStackEntry.arguments?.getInt("id") ?: 0
+            ScreenCityContentList(navController, viewModel,category, id)
+        }
         composable(Screen.CityRecommendation.route) { ScreenRecommendationCity(navController) }
     }
 }

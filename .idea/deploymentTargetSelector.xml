@@ -13,27 +13,28 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="MainActivity">
+      <SelectionState runConfigName="MainActivity (2)">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-09-19T13:37:24.605890600Z">
-          <Target type="DEFAULT_BOOT">
+        <DropdownSelection timestamp="2025-03-15T11:40:08.752149Z">
+          <Target type="BOOT_WITH_SNAPSHOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\mr-ka\.android\avd\Pixel_Tablet_API_34.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\mr-ka\.android\avd\Pixel_8_API_34.avd" />
             </handle>
+            <Snapshot name="snap_2025-02-09_13-02-40" path="C:\Users\mr-ka\.android\avd\Pixel_8_API_34.avd\snapshots\snap_2025-02-09_13-02-40" />
           </Target>
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="MainActivity (1)">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="MainActivity (2)">
+      <SelectionState runConfigName="MainActivity (5)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="MainActivity (3)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="MainActivity (4)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="MainActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

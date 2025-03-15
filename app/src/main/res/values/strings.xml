@@ -7,9 +7,15 @@
     <string name="Arkhangelsk_bridge">Arkhangelsk Bridge</string>
     <string name="Oktyabrsky_Bridge">Oktyabrsky Bridge</string>
     <string name="Alexandrovskaya_embankment">Alexandrovskaya embankment</string>
-    <string name="THE_PALACE_OF_METALLURGISTS">THE PALACE of metallurgists</string>
-    <string name="THE_PALACE_of_Chemists">THE PALACE of Chemists</string>
+    <string name="THE_PALACE_OF_METALLURGISTS">The palace of metallurgists</string>
+    <string name="THE_PALACE_of_Chemists">The palace of Chemists</string>
     <string name="Chamber_theatre">Chamber theatre</string>
+    <string name="Attractions">Attractions</string>
+    <string name="Welcome_to_Cherepovets">Welcome to Cherepovets</string>
+    <string name="more_detailed">more detailed</string>
+    <string name="Recommendations">Recommendations</string>
+    <string name="Back_to_List">Back to List</string>
+
 
     <string name="Serpentine_Park_list_subtitle">В парке создана уникальная спортивная зона:
         установлен первый в регионе памп-трек, сделана скейт-площадка для двух дисциплин,
